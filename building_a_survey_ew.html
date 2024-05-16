@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="surveystyles.css"></link>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Bunny DayCare Survey</title>
+</head>
+<body>
+  <h1 id="title">Bunny Daycare Survey</h1>
+  <img src="https://www.womansworld.com/wp-content/uploads/2019/09/cute-bunny-in-a-field-of-grass-and-white-flowers.jpg" alt="bunny sitting up"/>
+  <p id="description">Here is where you answer all the questions about your pet bunnies</p>
+  <form id="survey-form">
+    <fieldset>
+    <label id="name-label">
+      Your Name Here: <input id="name" type="text" placeholder="First M. Last..." required/></label>
+      <label id="email-label">
+      Your Email Here: <input id="email" type="email" placeholder="example@email.com..." required/></label>
+      <label id="number-label">
+      How old are you (years): <input id="number" type="number" min="12" max="120" placeholder="age..."required/>
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>What type is your bunny?
+    <label for="dropdown">
+      <select id="dropdown">
+        <option value="">...</option>
+        <option value="1">Polish Rabbit</option>
+        <option value="2">Mini-Lop</option>
+        <option value="3">Dwarf Rabbit</option>
+        <option value="4">Giant Rabbit</option>
+        <option value="5">Other</option>
+      </select>
+         <textarea id="dropdown" placeholder="Please describe..." rows="3" cols="30"></textarea>
+    </label>
+    </fieldset>
+    <fieldset>
+    <legend>Bunny Hair Length (required)</legend>
+    <label for="hair-length">
+      Short Hair <input id="hair-length" type="radio" name="hair-select" value="1" class="inline" checked/>
+      Long Hair <input id="hair-length" type="radio" name="hair-select" value="2" class="inline"/>
+    </label>
+    </fieldset>
+    <fieldset>
+      <legend>Bunnies Personality Type: </legend>
+      <label for="personality-type">
+        Enthusiastic <Input id="personality-type" type="checkbox" value="1" class="inline" checked/>
+        Grumpy <Input id="personality-type" type="checkbox" value="2"class="inline"/>
+        Anxious <Input id="personality-type" type="checkbox" value="3" class="inline"/>
+        Cuddly <Input id="personality-type" type="checkbox" value="4" class="inline"/>
+        Attached <Input id="personality-type" type="checkbox" value="5" class="inline"/>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Any other important notes:</legend>
+      <label for="important-notes">
+        <textarea id="important-notes" placeholder= "Health, requirements, etc..." rows="3" cols="30">
+        </textarea>
+      </label>
+    </fieldset>
+      <label>
+        <input id="submit" type="submit" value="Submit"/>
+      </label>
+  </form>
+</body>
+</html>
